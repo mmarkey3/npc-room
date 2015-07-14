@@ -2,9 +2,11 @@
 
 A simple web application for a visual conversational "home base," intended to supplement tabletop games.
 
-This is a DEMO ONLY, which means you get to add your own character sprites and faces.
+This is a DEMO ONLY, which means you get to add your own character sprites and faces and background images.
 
 The look and feel of this demo is designed to be ambiguous in terms of sci-fi, modern, or fantasy setting.
+
+Note that the background has been removed until I can add a background image that I have permission to publicly use and redistribute.
 
 # Features
 
