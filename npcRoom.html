@@ -1,0 +1,41 @@
+<html>
+<head>
+	<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/knockout/3.1.0/knockout-min.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="knockoutMapping.js"></script>
+	
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="npcRoom.css">
+</head>
+
+<body>
+<div class="container">
+	<div class="title">
+		<br/>
+		<h2>NPC ROOM</h2>
+	</div>
+	
+	
+	
+	<div class="npc-container">
+		<!-- ko foreach: npcs -->
+		<div class="npc" data-bind="style: {top: top, left: left}">
+			<img class="npc-sprite" data-bind="attr: {src: spriteSrc}, click: $root.newDialogue"> </img>
+		</div>
+		<!-- /ko -->
+	</div>
+	
+	<div class="dialogue fadeout" id="dialogue" data-bind="visible: showingDialogue, css: { fadeout: fadeDialogue, vanish: fadeDialogue }">
+		<div class="dialogue dialogue-name" data-bind="html: currentNPC"></div>
+		<div class="dialogue-text" data-bind="html: dialogueText"></div>
+		<div class="face-container">
+			<img class="face" data-bind="attr: {src: faceSrc}"> </img>
+		</div>
+	</div>
+</div>
+
+
+<script type="text/javascript" src="npcRoomJSON.js"></script>
+<script type="text/javascript" src="npcRoom.js"></script>
+
+</body></html>

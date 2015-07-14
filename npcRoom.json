@@ -1,0 +1,14 @@
+[{
+	"npcs": [
+		{
+			"name": "Daemon",
+			"sprite": "daemon_sprite.png",
+			"face": "daemon_face.png",
+			"dialogue":
+				"Apparently Quinn is miffed that I gave him a conscience. Geez.  Sorry for making you want to be a better person, am I right?",
+			"dialogueIndex": 0,
+			"positionX": 0,
+			"positionY": 0
+		}
+	]
+}]
