@@ -28,10 +28,10 @@ function PersonVM() {
 		return str;
 	});
 	self.spriteSrc = ko.computed(function() {
-		return self.sprite();
+		return 'sprites/' + self.sprite();
 	});
 	self.faceSrc = ko.computed(function() {
-		return self.face();
+		return 'faces/' + self.face();
 	});
 	
 	self.dataFromJSON = function(string) {
